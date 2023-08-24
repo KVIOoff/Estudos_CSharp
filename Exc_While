@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Globalization;
+
+namespace PrimeiroProjetoCSHARP
+{
+ 
+    internal class Program
+    {
+
+        
+            /* Escreva um programa que repita a leitura de uma senha ate que ela seja valida
+             * para cada leitura de senha incorreta, escrever a mensagem "Senha invalida". Quando
+             * a senha for irnformada corretamente deve ser impressa a mensagem "Acesso permitido"
+             * e o algoritimo encerrado, considere que a senha correta é o valor 2002. */
+        
+             static void Main(string[] args)
+        {
+
+
+            Console.Write("Digite uma senha: ");
+            int x = int.Parse(Console.ReadLine());
+
+
+            
+            
+            while (x != 2002)
+            {
+           
+                Console.WriteLine("Senha invalida");
+                Console.Write("digite a senha novamente: ");
+
+                x = int.Parse (Console.ReadLine());
+            }
+
+            Console.WriteLine("acesso permitido");
+
+
+
+        }
+
+    }
